@@ -2,7 +2,7 @@
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed;
+    [SerializeField] private float speed = 10f;
     private Rigidbody2D rb;
 
     void Start()
@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Move();
     }
