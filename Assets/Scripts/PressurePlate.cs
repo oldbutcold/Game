@@ -38,27 +38,11 @@ public class PressurePlate : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D x)
+    private void OnTriggerStay2D(Collider2D x)
     {
-        if (x.GetComponent<Rigidbody2D>() != null)
-        {
-            door.OpenDoor();
-            timer = 1;
-            PlatePressed();
-        }
-    }
-
-    // private void OnTriggerStay2D(Collider2D x)
-    // {
-    //     if (x.GetComponent<Rigidbody2D>() != null)
-    //     {
-    //         timer = 1;
-    //         PlatePressed();
-    //     }
-    // }
-
-    private void PlatePressed()
-    {
+        if (x.GetComponent<Rigidbody2D>() == null) return;
+        timer = 1;
+        door.OpenDoor();
         spriteRenderer.sprite = pressedSprite;
     }
 }
