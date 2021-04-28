@@ -10,6 +10,7 @@
         <e p="Scripts" t="Include">
           <e p="Boundaries.cs" t="Include" />
           <e p="Door.cs" t="Include" />
+          <e p="MenuController.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="PressurePlate.cs" t="Include" />
         </e>
