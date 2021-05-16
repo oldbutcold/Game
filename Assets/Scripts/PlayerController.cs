@@ -4,12 +4,17 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float speed = 10f;
-    private Rigidbody2D rb;
+    public float speed;
+    private Animator _animator;
+    public float speed;
+    private Rigidbody2D myRigibody;
+    private Vector3 change;
+    
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        myRigibody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -17,16 +22,19 @@ public class PlayerController : MonoBehaviour
         Move();
     }
 
-    private void Update()
+    void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-            SceneManager.LoadScene(0);
+        change = Vector3.zero;
+        change.x = Input.GetAxis("Horizontal");
+        change.y = Input.GetAxis("Vertical");
+        if (change != Vector3.zero)
+        {
+            Move();
+        }
     }
 
-    private void Move()
+    void Move()
     {
-        var moveInput = new Vector2(Input.GetAxisRaw("Horizontal"),
-            Input.GetAxisRaw("Vertical"));
-        rb.MovePosition(rb.position + moveInput.normalized * (speed * Time.fixedDeltaTime));
+        myRigibody.MovePosition(transform.position + change * speed * Time.deltaTime);
     }
 }
