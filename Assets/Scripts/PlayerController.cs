@@ -4,8 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed;
-    private Animator _animator;
+    private Animator animator;
     public float speed;
     private Rigidbody2D myRigibody;
     private Vector3 change;
