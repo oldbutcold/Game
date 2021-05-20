@@ -4172,8 +4172,8 @@ GameObject:
   - component: {fileID: 1760587437}
   - component: {fileID: 1760587439}
   - component: {fileID: 1760587441}
-  - component: {fileID: 1760587436}
   - component: {fileID: 1760587440}
+  - component: {fileID: 1760587436}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4190,10 +4190,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1760587435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56fdc7196f3f229408ac2249661a0936, type: 3}
+  m_Script: {fileID: 11500000, guid: b07d4628de2361a4a968218e59283137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30.8
+  speed: 4
 --- !u!212 &1760587437
 SpriteRenderer:
   m_ObjectHideFlags: 0

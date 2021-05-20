@@ -7,44 +7,46 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     private Rigidbody2D myRigidbody;
     private Vector3 change;
-
     private Animator animator;
     
-    // Use this for initialization
+    // Start is called before the first frame update
     void Start()
     {
-        myRigidbody = GetComponent<Rigidbody2D>();
-
+        Application.targetFrameRate = 60;
         animator = GetComponent<Animator>();
+        myRigidbody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update()
-    { 
+    void FixedUpdate()
+    {
         change = Vector3.zero;
-        change.x = Input.GetAxisRaw("Horizontal");
-        change.y = Input.GetAxisRaw("Vertical");
+        change.x = Input.GetAxisRaw("Horizontal") * Time.deltaTime * speed;
+        change.y = Input.GetAxisRaw("Vertical") * Time.deltaTime * speed;
         UpdateAnimationAndMove();
+        var sprite = GetComponent<SpriteRenderer>();
+        sprite.sortingOrder = Mathf.RoundToInt(transform.position.y * -10f + 1);
     }
 
-    private void UpdateAnimationAndMove()
+    void UpdateAnimationAndMove()
     {
         if (change != Vector3.zero)
         {
+            transform.Translate(new Vector3(change.x, change.y));
             MoveCharacter();
-            animator.SetFloat("MoveX", change.x);
-            animator.SetFloat("MoveY", change.y);
-            animator.SetBool("Moving", true);
+            animator.SetFloat("moveX", change.x);
+            animator.SetFloat("moveY", change.y);
+            animator.SetBool("isMoving", true);
         }
         else
         {
-            animator.SetBool("Moving", false);
+            animator.SetBool("isMoving", false);
         }
     }
 
     void MoveCharacter()
     {
-        change.Normalize();
-        myRigidbody.MovePosition(transform.position + change * (speed * Time.deltaTime));
+        myRigidbody.MovePosition(
+            transform.position + change * (speed * Time.deltaTime));
     }
 }
