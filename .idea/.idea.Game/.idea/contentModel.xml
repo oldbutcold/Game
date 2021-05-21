@@ -18,6 +18,7 @@
             <e p="Interactable.cs" t="Include" />
             <e p="Lever.cs" t="Include" />
             <e p="SceneTeleport.cs" t="Include" />
+            <e p="Void.cs" t="Include" />
           </e>
           <e p="Player Scripts" t="Include">
             <e p="PlayerMovement.cs" t="Include" />

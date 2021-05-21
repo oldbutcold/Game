@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneTeleport : Interactable
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         
     }

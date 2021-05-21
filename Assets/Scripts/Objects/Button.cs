@@ -31,7 +31,7 @@ public class Button : MonoBehaviour
         if (buttonActive) 
             return;
         if (!thisLever.leverActive)
-            SceneManager.LoadScene("Level 1");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         ActivateButton();
     }
 }
