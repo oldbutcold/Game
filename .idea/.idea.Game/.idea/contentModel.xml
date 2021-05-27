@@ -7,8 +7,8 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="LevelLoader.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="LevelLoader.cs" t="Include" />
           <e p="Menu" t="Include">
             <e p="MainMenu.cs" t="Include" />
           </e>
@@ -21,7 +21,9 @@
             <e p="Void.cs" t="Include" />
           </e>
           <e p="Player Scripts" t="Include">
+            <e p="Enemy.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
+            <e p="WalkedDistance.cs" t="Include" />
           </e>
           <e p="PlayerController.cs" t="Include" />
           <e p="Scriptable Objects" t="Include">
@@ -62,6 +64,7 @@
         <e p="Tiled2Unity" t="Include">
           <e p="Imported" t="Include">
             <e p="_ReadMe.txt" t="Include" />
+            <e p="Dungeon 2.tiled2unity.xml" t="Include" />
             <e p="First Level.tiled2unity.xml" t="Include" />
           </e>
           <e p="License.txt" t="Include" />

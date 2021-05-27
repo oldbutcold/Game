@@ -218,6 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInRange: 0
+  sceneID: 2
 --- !u!61 &640597943
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -292,7 +293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -315.9, y: 20.3}
+  m_AnchoredPosition: {x: -244, y: -7.555542}
   m_SizeDelta: {x: 298.87457, y: 466.88892}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &719415167
@@ -474,6 +475,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 9132309913510187816, guid: 15daafc2463b2f44fac53ca289407e89,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15daafc2463b2f44fac53ca289407e89, type: 3}
