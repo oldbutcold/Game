@@ -697,7 +697,7 @@ GameObject:
   - component: {fileID: 1599521476}
   - component: {fileID: 1599521477}
   - component: {fileID: 1599521478}
-  - component: {fileID: 1599521479}
+  - component: {fileID: 1599521480}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -861,7 +861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInRange: 0
---- !u!114 &1599521479
+--- !u!114 &1599521480
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -870,13 +870,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1599521471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f353b53c4a8e5cf41a7fd143d768b354, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e2a37dd23af8c244891b683542f47d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   totalDistanceX: 0
   totalDistanceY: 0
-  maxDistanceX: 2.5
-  maxDistanceY: 2.5
+  maxDistanceX: 3
+  maxDistanceY: 3
+  enemy: {fileID: 8081204240983777339, guid: 8c999b50071835940aff8a85a8fcf08e, type: 3}
 --- !u!1 &2099662997
 GameObject:
   m_ObjectHideFlags: 0
