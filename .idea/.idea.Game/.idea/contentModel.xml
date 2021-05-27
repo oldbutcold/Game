@@ -13,6 +13,7 @@
             <e p="MainMenu.cs" t="Include" />
           </e>
           <e p="Objects" t="Include">
+            <e p="Button Without Lever.cs" t="Include" />
             <e p="Button.cs" t="Include" />
             <e p="Door.cs" t="Include" />
             <e p="Interactable.cs" t="Include" />
@@ -65,6 +66,7 @@
           <e p="Imported" t="Include">
             <e p="_ReadMe.txt" t="Include" />
             <e p="Dungeon 2.tiled2unity.xml" t="Include" />
+            <e p="Dungeon 3.tiled2unity.xml" t="Include" />
             <e p="First Level.tiled2unity.xml" t="Include" />
           </e>
           <e p="License.txt" t="Include" />

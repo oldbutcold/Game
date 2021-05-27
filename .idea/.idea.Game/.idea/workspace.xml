@@ -34,6 +34,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/SceneTeleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/WalkedDistance.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Button Without Lever.cs" />
       </list>
     </option>
   </component>
@@ -88,7 +89,7 @@
       <workItem from="1621598030098" duration="2741000" />
       <workItem from="1622056825398" duration="3385000" />
       <workItem from="1622099233466" duration="1041000" />
-      <workItem from="1622144345938" duration="2411000" />
+      <workItem from="1622144345938" duration="2464000" />
     </task>
     <servers />
   </component>
