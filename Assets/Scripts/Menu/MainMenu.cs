@@ -15,4 +15,10 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Exited from game!");
         Application.Quit();
     }
+
+    public void Ending()
+    {
+        Debug.Log("Completed the game!");
+        SceneManager.LoadScene(0);
+    }
 }

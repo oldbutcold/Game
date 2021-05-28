@@ -13,11 +13,13 @@
             <e p="MainMenu.cs" t="Include" />
           </e>
           <e p="Objects" t="Include">
-            <e p="Button Without Lever.cs" t="Include" />
             <e p="Button.cs" t="Include" />
+            <e p="ButtonWithoutLever.cs" t="Include" />
             <e p="Door.cs" t="Include" />
             <e p="Interactable.cs" t="Include" />
             <e p="Lever.cs" t="Include" />
+            <e p="MainScript.cs" t="Include" />
+            <e p="NewDoor.cs" t="Include" />
             <e p="SceneTeleport.cs" t="Include" />
             <e p="Void.cs" t="Include" />
           </e>

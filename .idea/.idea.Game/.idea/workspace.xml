@@ -28,7 +28,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/PlayerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Lever.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Void.cs" />
         <option value="$PROJECT_DIR$/Assets/LevelLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Menu/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/SceneTeleport.cs" />
@@ -36,6 +35,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/WalkedDistance.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Scripts/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Button.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/Void.cs" />
       </list>
     </option>
   </component>
@@ -90,7 +90,7 @@
       <workItem from="1621598030098" duration="2741000" />
       <workItem from="1622056825398" duration="3385000" />
       <workItem from="1622099233466" duration="1041000" />
-      <workItem from="1622144345938" duration="8394000" />
+      <workItem from="1622144345938" duration="9721000" />
     </task>
     <servers />
   </component>

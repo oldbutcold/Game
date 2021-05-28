@@ -15,6 +15,10 @@ public class Void : Interactable
     void Update()
     {
         if (playerInRange)
+        {
+            MainScript.PushedButtons = 0; 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+            
     }
 }
