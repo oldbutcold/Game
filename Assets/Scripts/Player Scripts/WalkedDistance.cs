@@ -12,21 +12,21 @@ public class WalkedDistance : MonoBehaviour
     public float maxDistanceY;
 
     public GameObject enemy;
-    private bool isEnemySpawned = false;
+    public static bool isEnemyAngry = false;
 
     void Start()
     {
         oldPosition = transform.position;
+        Instantiate(enemy, enemy.transform.position, Quaternion.identity);
     }
 
     void Update()
     {
         UpdateDistance();
         if ((totalDistanceX >= maxDistanceX || totalDistanceY >= maxDistanceY) && 
-            isEnemySpawned == false)
+            isEnemyAngry == false)
         {
-            Instantiate(enemy, enemy.transform.position, Quaternion.identity);
-            isEnemySpawned = true;
+            isEnemyAngry = true;
         }
     }
 
@@ -41,12 +41,12 @@ public class WalkedDistance : MonoBehaviour
 
         oldPosition = position;
 
-        if (distanceX == 0 && distanceY > 0.05)
+        if (distanceX == 0 && distanceY > 0.01)
         {
             totalDistanceX = 0;
         }
 
-        if (distanceX > 0.05 && distanceY == 0)
+        if (distanceY == 0 && distanceX > 0.01)
         {
             totalDistanceY = 0;
         }

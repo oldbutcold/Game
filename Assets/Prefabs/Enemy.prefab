@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8081204240983777339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.62, y: -3.07, z: 0}
-  m_LocalScale: {x: 2.432087, y: 2.432087, z: 2.432087}
+  m_LocalPosition: {x: 2.7, y: 0.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2084948019
   m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingOrder: 101
   m_Sprite: {fileID: 4344970119402266832, guid: e968796d93b629142818928b4130949a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -126,7 +126,7 @@ MonoBehaviour:
   playerInRange: 0
   player: {fileID: 0}
   enemy: {fileID: 8081204240983777339}
-  speed: 2
+  speed: 3
 --- !u!95 &5072292300084353569
 Animator:
   serializedVersion: 3
